@@ -1,0 +1,109 @@
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 60%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    
+    display: block; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.product-title {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.1rem; 
+    text-align: center; 
+    text-transform: capitalize; 
+    margin-top: 5px;
+    min-height: 40px;
+}
+
+.product-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #6c757d !important;
+}
+
+
+.product-card .rating i.fas.fa-star,
+.product-card .rating i.fas.fa-star-half-alt {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.current-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.original-price {
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    
+    float: left; 
+    clear: both;
+ 
+    background: linear-gradient(to right, #28a745, #198754); 
+    z-index: 10;
+}
+
+
+.discount-badge.offer-badge {
+    background: linear-gradient(to right, #007bff, #0056b3); 
+}
+
+.discount-badge.day-offer-badge {
+    background: linear-gradient(to right, #ffc107, #e0a800); 
+    color: #343a40;
+}
+
+.discount-badge.huge-discount {
+    background: linear-gradient(to right, #dc3545, #a3000a); 
+}
+
+
+.add-to-cart-btn {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.search-bar .form-control {
+    border-right: none;
+}
+.search-bar .btn {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
